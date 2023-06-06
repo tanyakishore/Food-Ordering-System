@@ -46,7 +46,7 @@ int main()
 void login(){
     int count;
     string userId, password,id,pass;
-    system("cls");
+    
     cout<<"Please enter your username and password: "<<endl;
     cout<<"USERNAME : ";
     cin>>userId;
@@ -57,7 +57,7 @@ void login(){
     while(input>>id>>pass){
         if(id==userId && pass==password){
             count=1;
-            system("cls");
+            
         }
     }
     input.close();
@@ -72,7 +72,7 @@ void login(){
 }
 void registration(){
     string ruserId,rpassword,mobileno,address,rid,rpass,rmob,radd;
-    system("cls");
+    
     cout<<"USERNAME : ";
     cin>>ruserId;
     cout<<"PASSWORD : ";
@@ -84,13 +84,13 @@ void registration(){
 
     ofstream f1("records.txt",ios::app);
     f1<<ruserId<<' '<<rpassword<<rmob<<radd<<endl;
-    system("cls");
+    
     cout<<"Registration is successfull!"<<endl;
     main();
 }
 void forgotPassword(){
     int option;
-    system("cls");
+    
     cout<<"Forgot password? \n";
     cout<<"Press 1 to search your id by username \n";
     cout<<"Press 2 to go back to the main menu \n";
@@ -137,7 +137,7 @@ int Order(){
 	char bir1[]="Chicken Biryani", bir2[]="Prawn Biryani", bir3[]="Veg Biryani",gotostart ;
 	int choice=0,pchoice,pchoice1, quantity;//time=40;
 	beginning:
-	system("CLS");
+	
 	cout<<"---------Salt and Sizzle -----------\n\n";
 	cout<<"Hello! "<<"\nWhat would you like to order?\n\n";
 
@@ -181,7 +181,7 @@ int Order(){
 
 
 			}
-			system("CLS");
+			
 			switch (pchoice1)
 			{
 			 case 1:
@@ -243,7 +243,7 @@ int Order(){
 			break;
 
 			}
-			system("CLS");
+			
 			switch (pchoice1)
 			{
 			 case 1:
@@ -301,7 +301,7 @@ int Order(){
 			break;
 
 			}
-			system("CLS");
+			
 			switch (pchoice1)
 			{
 			 case 1:
@@ -361,7 +361,7 @@ int Order(){
 			break;
 
 			}
-			system("CLS");
+			
 			switch (pchoice1)
 			{
 			 case 1:
@@ -417,7 +417,7 @@ int Order(){
 			break;
 
 			}
-			system("CLS");
+			
 			switch (pchoice1)
 			{
 			 case 1:
@@ -454,7 +454,7 @@ int Order(){
 	}
 
 	else{
-			system("CLS");
+			
 			cout<<"Please Select Right Option: \n";
 			cout<<"\nWould You like to Start the program again? Y / N: " ;
 			cin>>gotostart;
